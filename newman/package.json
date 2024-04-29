@@ -1,0 +1,16 @@
+{
+  "name": "example-project-for-newman-reporter-testomatio",
+  "version": "0.0.1",
+  "description": "Example project for testomatio reporter using newman",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx newman run collection.json -e env.json -r testomatio",
+    "test:fail": "npx newman run collection_fail.json -e env.json -r testomatio"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.3.2",
+    "newman-reporter-testomatio": "latest"
+  }
+}
